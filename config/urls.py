@@ -27,4 +27,5 @@ urlpatterns = [
     path('api/account/', include('apps.account.urls')),
     path('api/review/', include('apps.review.urls')),
     
+    
 ]
