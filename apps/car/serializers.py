@@ -73,7 +73,7 @@ class CarUpdateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Car                                          # 6
-        fields = ['model', 'brand', 'image', 'year', 'slug', 'name','user'] 
+        fields = ['model', 'brand', 'image', 'year', 'slug','user'] 
     
     def validate(self, attrs):                                 # 6
         user = self.context['request'].user
